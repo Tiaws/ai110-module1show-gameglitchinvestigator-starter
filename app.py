@@ -28,7 +28,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
-
+# FIXME: Logic breaks here
 def check_guess(guess, secret):
     if guess == secret:
         return "Win", "🎉 Correct!"
@@ -156,6 +156,7 @@ if submit:
         st.session_state.history.append(guess_int)
 
         if st.session_state.attempts % 2 == 0:
+        # FIXME: Logic breaks here
             secret = str(st.session_state.secret)
         else:
             secret = st.session_state.secret
