@@ -25,28 +25,37 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] Its a guessing game.
+- [ ] the hints were backwards, secret was a str type
+- [ ] switched the hints, and change the type to int 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 40
+2. Game returns "Too Low"
+3. User enters a guess of 70, and the game shows "Too High"
+4. Score updates correctly after each guess
+5. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# ============================= test session starts ==============================
+platform win32 -- Python 3.13.15, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\jijot\OneDrive - The University of Texas at Dallas\Documents\Code pat\Game Glitch Investigator\ai110-module1show-gameglitchinvestigator-starter
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.15.1
+collected 13 items                                                              
+
+tests\test_game_logic.py .............                                    [100%]
+
+============================== 13 passed in 0.12s ==============================
+(.venv) PS C:\Users\jijot\OneDrive - The University of Texas at Dallas\Documents\Code pat\Game Glitch 
 ```
 
 ## 🚀 Stretch Features
